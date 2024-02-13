@@ -2,6 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+        $('.container').mouseenter(function () {
+            $('.card').stop().animate({
+                top: '-90px'
+            }, 'slow');
+        }).mouseleave(function () {
+            $('.card').stop().animate({
+                top: 0
+            }, 'slow');
+        });
+    });
+        </script>
     </head>
 <body>
     <div class="container">  
